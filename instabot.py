@@ -21,7 +21,7 @@ driver = webdriver.Chrome('PATH/TO/chromedriver', options=options)
 #--Text--#
 User_Request_1 = "a"
 Instabot_reply_1 = "b"
-Instabot_reply_2 = "c"
+Instabot_reply_2_DoubleSEND = "c"
 
 
 def login():
@@ -77,7 +77,7 @@ def msgr(count):
                         opt_in_list.append(ig.text)
                         driver.back()
                     else:
-                        chatbox.send_keys(Instabot_reply_2 + Keys.RETURN)
+                        chatbox.send_keys(Instabot_reply_2_DoubleSEND) + Keys.RETURN)
                         print(ig.text + " Tried to reOpt-In" + " | " + str(currenttime))
                         driver.back()
 
