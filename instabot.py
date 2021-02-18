@@ -19,9 +19,9 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome('PATH/TO/chromedriver', options=options)
 
 #--Text--#
-User_Request_1 = "gib me money daddy"
-Instabot_reply_1 = "OK honeybuns. Send me your BTC addy and Daddy Joey will send you some coin shortly"
-Instabot_reply_2 = "No Double Dipping!"
+User_Request_1 = "a"
+Instabot_reply_1 = "b"
+Instabot_reply_2 = "c"
 
 
 def login():
