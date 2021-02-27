@@ -21,12 +21,18 @@ options.add_argument('--disable-gpu')
 driver = webdriver.Chrome('/Users/josephgallione/Documents/code/instadmbot/chromedriver', options=options)
 
 #--Text--#
+<<<<<<< HEAD
 Instabot_reply_1 = "Hey! Whaaazzzup?"
 Instabot_reply_2 = "?hello"
 Instabot_reply_3 = emoji.emojize("Great content! Fantastic (y) But look at dis...")
 Instabot_reply_4 = emoji.emojize("Im doin me lol how are you?")
 Instabot_reply_5 = emoji.emojize("Just send me a dank meme already")
 Instabot_reply_6 = emoji.emojize("  ")
+=======
+User_Request_1 = "a"
+Instabot_reply_1 = "b"
+Instabot_reply_2_DoubleSEND = "c"
+>>>>>>> fd42fb954f61a2e8f06bd5c171b3096cb96c05e6
 
 def send_meme(ig):
     driver.get('https://www.instagram.com/p/CK7QjpdL6nM/')
@@ -102,7 +108,7 @@ def msgr(count):
                         opt_in_list.append(ig.text)
                         driver.back()
                     else:
-                        chatbox.send_keys(Instabot_reply_2 + Keys.RETURN)
+                        chatbox.send_keys(Instabot_reply_2_DoubleSEND) + Keys.RETURN)
                         print(ig.text + " Tried to reOpt-In" + " | " + str(currenttime))
                         driver.back()
             
